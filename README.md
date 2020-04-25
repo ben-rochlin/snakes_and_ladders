@@ -42,9 +42,9 @@ Welcome message pops up
 The user is taken to the main menu.
 
 The main menu will give the user three options: 
-..* Start a new game
-..* Game rules
-..* Quit
+1. Start a new game
+2. Game rules
+3. Quit
 
 user is asked how many people are going to play up to 4 players
 
