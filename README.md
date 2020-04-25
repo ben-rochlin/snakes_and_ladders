@@ -88,6 +88,9 @@ if they would like to play again they will be asked of they would like to play a
 ### FLOW DIAGRAM:
 
 
+Inline-style: 
+![alt text](https://github.com/ben-rochlin/snakes_and_ladders/blob/master/docs/FLOW%20DIAGRAM.jpg "FLOW CHART")
+
 
 
 
