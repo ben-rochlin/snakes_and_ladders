@@ -35,13 +35,16 @@ MSAL will provide some neat visaul and interactive features to enhance the overa
 
 ### User Interaction and Experience
 
-User Story
-
-User begins game
+User begins the application.
 
 Welcome message pops up
 
-brief instruction of how the game will run, magic snakes and magic ladders, why its different to normal snakes and ladders
+The user is taken to the main menu.
+
+The main menu will give the user three options. 
+           * Start a new game
+           * Game rules
+           * Quit
 
 user is asked how many people are going to play up to 4 players
 
