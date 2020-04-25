@@ -14,4 +14,30 @@ MSAL is being created as part of a personal project by the developer, but the ma
 
 ###### - Visual Game Board and Layout
 
+The 'game-board', is an easy to understand and logically layed out graphical representation of the game. The game-board recreates the feeling of playing on a physical board and allows players to have a realtime view of the game.
+
+The game-board will allow an overview of the progression of the game and allow players to see each players positions, and the location and severity of the games 'Snakes' the 'Ladders' and the 'Wizards'.
+
+###### - Interesting and creative set of Rules
+
+The Game will provide users with an enjoyable and enhanced version of "snakes and ladders' which will see players dealing with Snakes, Ladders, Wizards and potions. 
+
+The extra functionality will add a layer of entertainment and depth to the game which is not present in the original. 
+
+The extra rules will see the use and implentation of an indivual user inventory system. Players can collect 'potions' which can be used to alter the behaviour of the 'Snakes' and 'Wizards'.
+
+Wizard's will provide an unpredictable and exciting edge to the game as they can tend to be very moody.. or Drunk.
+
+
+###### - Interactive and Visual User Experience
+
+MSAL will provide some neat visaul and interactive features to enhance the overall user experience. This will include a 'welcome' or greeting upon the application launch. A main menu which can be used to launch a new gamne, view the game rules or quit the application. Users will be able to provide their names to the application, which will further enhance and personalise the experience. A virtual 'Dice roll' will be used and manually triggered by each player for each turn they have. an ingame overlay will display information relevant to the players turn, including the sometimes funny interaction a player will have a potentially drunk wizard. A congratulatory banner to celebrate the player who wins!
+
+All of these components will combine to the overall feel and completenes of the app.
+
+
+
+
+
+
 
