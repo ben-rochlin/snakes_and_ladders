@@ -33,5 +33,52 @@ MSAL will provide some neat visaul and interactive features to enhance the overa
 ------------------------------------------------------------------------------------------------------------------------------
 
 
+### User Interaction and Experience
+
+User Story
+
+User begins game
+
+Welcome message pops up
+
+brief instruction of how the game will run, magic snakes and magic ladders, why its different to normal snakes and ladders
+
+user is asked how many people are going to play up to 4 players
+
+user/s asked which character they would like to be, gets to pick a character
+
+users are asked if they are ready?
+the first spell occurs which will determine the player order order at random, the player order will remain the same for the rest of game.
+
+Player (x) is aksed to roll the dice (1..6), user moves the corresponding amount of steps/squares. 
+
+⦁	if Player (x) lands on a square with a 'magic snake' the snake will produce a random number within a specific range based on the level of the snake, and player (x) will be moved the corresponding amount of steps/squares backwards, the snake will always land a player on an empty sqaure.
+
+⦁	if Player (x) lands on a square with a 'magic ladder' the ladder will produce a random number within a specific range based on the level of the ladder, and player (x) will be moved the corresponding amount of steps/squares forwards, the ladder will always land a player on an empty sqaure.
+
+⦁	if Player (x) lands on a wizard the player, the wizard will produce one of three outcomes for the player, depending on his mood. 
+
+           1: happy wizard: will act the same as a 'magic ladder' but the user can land on an occupied sqaure
+           2: angry wizard: will act the same as a 'magic snake' but the user can land on an occupied square
+           3: lazy wizard: will let you roll the dice again because he wants to be left alone.
+
+⦁	if Player (x) lands on an empty square/step they will remain there until their next turn.
+
+Once Player (x) has settled on a square, the next player will be prompted to roll the dice and take their turn.
+
+The First player to reach the end of the steps/squares wins.
+
+A message congratulating the winner will pop up.
+
+Once the game is complete, the users will be asked if they want to continue the current game to play for second/third place depending on how many people are playing.
+
+If the user/s select yes the game will resume. If the user/s select no, the user will be asked if they would like to play again or quit the application.
+
+if they would like to play again they will be asked of they would like to play as the same characters, if yes. then the same number of players and characters will be used but a new player order will be created. if no, then the game will return to the number of/players and character select screen.
+
+
+
+
+
 
 
