@@ -1,5 +1,5 @@
 
-# Magical Snakes and Ladders... and the drunk Wizard's!
+## Magical Snakes and Ladders... and the drunk Wizard's!
 
 
-## Statement of Purpose and Scope
+#### Statement of Purpose and Scope
