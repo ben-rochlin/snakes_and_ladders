@@ -43,29 +43,32 @@ The user is taken to the main menu.
 
 The main menu will give the user three options: 
 1. Start a new game
-2. Game rules
-3. Quit
+2. Game rules - detailed instructions on how the game works.
+3. Quit - The user will bne able to exit the application.
 
-user is asked how many people are going to play up to 4 players
+When a new game is started the user is asked how many people are going to play, up to 4 players can play a single game.
+Each player will be asked to input their name.
 
-user/s asked which character they would like to be, gets to pick a character
+The game-board is displayed and the game begins.
 
-users are asked if they are ready?
-the first spell occurs which will determine the player order order at random, the player order will remain the same for the rest of game.
+Player (x) is aksed to roll the dice (1..12), after the roll the user moves the corresponding amount of steps/squares. 
 
-Player (x) is aksed to roll the dice (1..6), user moves the corresponding amount of steps/squares. 
+⦁ If player (X) rolls a 2 (snake eyes) the player collects a potion which will be added to their inventory.
 
-⦁	if Player (x) lands on a square with a 'magic snake' the snake will produce a random number within a specific range based on the level of the snake, and player (x) will be moved the corresponding amount of steps/squares backwards, the snake will always land a player on an empty sqaure.
+⦁ if Player (x) lands on a square with a 'magic ladder' the ladder will produce a random number within a specific range based on the length of the ladder, and player (x) will be moved the corresponding amount of steps/squares forwards, the ladder will always land a player on an empty sqaure. 
 
-⦁	if Player (x) lands on a square with a 'magic ladder' the ladder will produce a random number within a specific range based on the level of the ladder, and player (x) will be moved the corresponding amount of steps/squares forwards, the ladder will always land a player on an empty sqaure.
+⦁ if Player (x) lands on a square with a 'magic snake' the snake will produce a random number within a specific range based on the length of the snake, and player (x) will be moved the corresponding amount of steps/squares backwards, the snake will always land a player on an empty sqaure. IF the player has a potion in their inventory they will be asked if they wish to use the potion to subdue the snake, if the player chooses to use the potion the snake will be 'charmed' and will not move the player backwards.
 
-⦁	if Player (x) lands on a wizard the player, the wizard will produce one of three outcomes for the player, depending on his mood. 
-
+⦁ if Player (x) lands on a wizard, the player, the wizard will produce one of three outcomes for the player, depending on his mood. 
            1: happy wizard: will act the same as a 'magic ladder' but the user can land on an occupied sqaure
            2: angry wizard: will act the same as a 'magic snake' but the user can land on an occupied square
-           3: drunk wizard: will let you roll the dice again because he wants to be left alone.
+           3: drunk wizard: will let the player roll the dice again because he's passed out lol.
 
-⦁	if Player (x) lands on an empty square/step they will remain there until their next turn.
+           * If the player has a potion in their inventory, they will be asked if they wish to give the potion to the wizard.
+           if the player gives the wizard a potion the wizard will become either a happy wizard or a drunk wizard.
+         
+
+⦁ if Player (x) lands on an empty square/step they will remain there until their next turn.
 
 Once Player (x) has settled on a square, the next player will be prompted to roll the dice and take their turn.
 
@@ -75,10 +78,12 @@ A message congratulating the winner will pop up.
 
 Once the game is complete, the users will be asked if they want to continue the current game to play for second/third place depending on how many people are playing.
 
-If the user/s select yes the game will resume. If the user/s select no, the user will be asked if they would like to play again or quit the application.
+If the user/s select yes the game will resume. If the user/s select no, the user will be asked if they would like to play again return to the main-menu or quit the application.
 
 if they would like to play again they will be asked of they would like to play as the same characters, if yes. then the same number of players and characters will be used but a new player order will be created. if no, then the game will return to the number of/players and character select screen.
 
+
+-------
 
 
 
