@@ -60,7 +60,7 @@ Player (x) is aksed to roll the dice (1..6), user moves the corresponding amount
 
            1: happy wizard: will act the same as a 'magic ladder' but the user can land on an occupied sqaure
            2: angry wizard: will act the same as a 'magic snake' but the user can land on an occupied square
-           3: lazy wizard: will let you roll the dice again because he wants to be left alone.
+           3: drunk wizard: will let you roll the dice again because he wants to be left alone.
 
 ⦁	if Player (x) lands on an empty square/step they will remain there until their next turn.
 
