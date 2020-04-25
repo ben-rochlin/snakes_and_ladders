@@ -12,6 +12,6 @@ MSAL is being created as part of a personal project by the developer, but the ma
 
 #### Features
 
-##### Visual Game Board and Layout
+###### - Visual Game Board and Layout
 
 
