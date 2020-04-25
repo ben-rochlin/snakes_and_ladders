@@ -41,7 +41,7 @@ Welcome message pops up
 
 The user is taken to the main menu.
 
-The main menu will give the user three options. 
+The main menu will give the user three options: 
            * Start a new game
            * Game rules
            * Quit
