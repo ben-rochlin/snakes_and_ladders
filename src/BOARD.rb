@@ -28,7 +28,7 @@ p2_position = 0
 
 #method for player dice/roll
 def player_roll(player_position)
-    dice_roll = rand(12)
+    dice_roll = 1
     player_position += dice_roll
 end
 
