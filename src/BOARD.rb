@@ -3,28 +3,57 @@ p2 = "  "
 p3 = "  "
 p4 = "  "
 b = "  "
-
 s =  "🐍"
 l = "🧬"
 w = "🧙"
 b = "  "
 t = "🏆"
+# p1_potion = 0
+
+# p1 = Array.new(16, "  ") 
+p1_position = 0
+p2_position = 0
+# p1[p1_position] = "🧛"
+
+someones_won = false
 
 
-p1 = Array.new(64, "  ") 
-p1[0] = "🧛"
 
-p1_potion = 0
+def player_roll(player_position)
+    dice_roll = rand(12)
+    player_position += dice_roll
+end
+
+
+
+# p1[p1_dice_roll] =  "🧛"
+
+
+
+
+p1_position = player_roll(p1_position)
+p2_position = player_roll(p2_position)
+# p3_position = player_roll(p3_position)
+# p4_position = player_roll(p4_position)
+
+def move_player(player_position, player_char)
+    player = Array.new(16, "  ") 
+    player[player_position] = player_char
+    return player
+end
+
+p1 = move_player(p1_position, "🧛")
+p2 = move_player(p2_position, "🧚")
 
 game = <<-HERDOC
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$ #{p1[8]}     #{9}|#{p1[9]}     #{10}|#{p1[10]}     #{11}|#{p1[11]}     #{12}|#{p1[12]}     #{13}|#{p1[13]}     #{14}|#{p1[14]}     #{15}|#{p1[15]}     #{16}|$$
-$$ #{p2}    #{b}|#{p2}     #{b}|#{p2}     #{b}|#{p2}     #{s}|#{p2}     #{b}|#{p2}     #{b}|#{p2}     #{b}|#{p2}     #{t}|$$
+$$ #{p2[8]}    #{b}|#{p2[9]}     #{b}|#{p2[10]}     #{b}|#{p2[11]}     #{s}|#{p2[12]}     #{b}|#{p2[13]}     #{b}|#{p2[14]}     #{b}|#{p2[15]}     #{t}|$$
 $$ #{p3}    #{b}|#{p3}     #{b}|#{p3}     #{b}|#{p3}     #{s}|#{p3}     #{b}|#{p3}     #{b}|#{p3}     #{b}|#{p3}     #{t}|$$
 $$ #{p4}    #{b}|#{p4}     #{b}|#{p4}     #{b}|#{p4}     #{s}|#{p4}     #{b}|#{p4}     #{b}|#{p4}     #{b}|#{p4}     #{t}|$$
 $$_________|_________|_________|_________|_________|_________|_________|_________|$$
 $$ #{p1[0]}      |#{p1[1]}      #{2}|#{p1[2]}      #{3}|#{p1[3]}      #{4}|#{p1[4]}      #{5}|#{p1[5]}      #{6}|#{p1[6]}      #{7}|#{p1[7]}      #{8}|$$
-$$ #{p2}      |#{p2}     #{b}|#{p2}     #{l}|#{p2}     #{b}|#{p2}     #{b}|#{p2}     #{b}|#{p2}     #{w}|#{p2}     #{b}|$$
+$$ #{p2[0]}      |#{p2[1]}     #{b}|#{p2[2]}     #{l}|#{p2[3]}     #{b}|#{p2[4]}     #{b}|#{p2[5]}     #{b}|#{p2[6]}     #{w}|#{p2[7]}     #{b}|$$
 $$ #{p3}      |#{p3}     #{b}|#{p3}     #{l}|#{p3}     #{b}|#{p3}     #{b}|#{p3}     #{b}|#{p3}     #{w}|#{p3}     #{b}|$$
 $$ #{p4}      |#{p4}     #{b}|#{p4}     #{l}|#{p4}     #{b}|#{p4}     #{b}|#{p4}     #{b}|#{p4}     #{w}|#{p4}     #{b}|$$
 $$_________|_________|_________|_________|_________|_________|_________|_________|$$
@@ -35,3 +64,4 @@ puts ""
 puts "            MAGIC Snakls and baddlrs... and thl drunk wizard!"
 puts ""
 puts game
+
