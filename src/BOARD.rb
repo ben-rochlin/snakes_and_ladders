@@ -8,42 +8,33 @@ l = "🧬"
 w = "🧙"
 b = "  "
 t = "🏆"
-# p1_potion = 0
-
-# p1 = Array.new(16, "  ") 
-# p1_position = 0
-# p2_position = 0
-# p1[p1_position] = "🧛"
-# someones_won = false
-
-# p2[0..16] = "  "
 
 
 
 
 
-
+#players start at sq1 which is '0' in their array
 p1_position = 0
 p2_position = 0
 
-#method for player dice/roll
-def player_roll(player_position)
+#player dice/roll
+def player_roll(a_player_position)
     dice_roll = 1
-    player_position += dice_roll
+    a_player_position += dice_roll
 end
 
-
+#players position + dice roll
 p1_position = player_roll(p1_position)
 
-
-def move_player(player_position, player_char)
+#this method will recreate the array to update the char location
+def move_player_char(player_position, player_char)
     player = Array.new(16, "  ") 
     player[player_position] = player_char
     return player
 end
 
-p1 = move_player(p1_position, "🧛")
-p2 = move_player(p2_position, "🧚")
+p1 = move_player_char(p1_position, "🧛")
+p2 = move_player_char(p2_position, "🧚")
 
 game = <<-HERDOC
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -60,8 +51,8 @@ $$_________|_________|_________|_________|_________|_________|_________|________
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 HERDOC
 
-puts ""
+puts 
 puts "            MAGIC Snakes and ladders... and the drunk wizard! 16 step edition"
-puts ""
+puts 
 puts game
 
