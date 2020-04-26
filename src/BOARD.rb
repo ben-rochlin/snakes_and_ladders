@@ -34,9 +34,9 @@ end
 
 #START GAME LOOP HERE
 
-#players position + dice roll
-p1_position = player_roll(p1_position)
-p2_position = player_roll(p2_position)
+#players position after dice roll
+# p1_position = player_roll(p1_position)
+# p2_position = player_roll(p2_position)
 
 #END GAME LOOP
 
