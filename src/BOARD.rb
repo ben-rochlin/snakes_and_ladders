@@ -11,28 +11,30 @@ t = "🏆"
 # p1_potion = 0
 
 # p1 = Array.new(16, "  ") 
+# p1_position = 0
+# p2_position = 0
+# p1[p1_position] = "🧛"
+# someones_won = false
+
+# p2[0..16] = "  "
+
+
+
+
+
+
 p1_position = 0
 p2_position = 0
-# p1[p1_position] = "🧛"
 
-someones_won = false
-
-
-
+#method for player dice/roll
 def player_roll(player_position)
     dice_roll = rand(12)
     player_position += dice_roll
 end
 
 
-
-# p1[p1_dice_roll] =  "🧛"
-
-
-
-
 p1_position = player_roll(p1_position)
-p2_position = player_roll(p2_position)
+# p2_position = player_roll(p2_position)
 # p3_position = player_roll(p3_position)
 # p4_position = player_roll(p4_position)
 
@@ -61,7 +63,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 HERDOC
 
 puts ""
-puts "            MAGIC Snakls and baddlrs... and thl drunk wizard!"
+puts "            MAGIC Snakes and ladders... and the drunk wizard! 16 step edition"
 puts ""
 puts game
 
