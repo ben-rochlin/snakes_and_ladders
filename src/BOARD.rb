@@ -23,9 +23,6 @@ def player_roll(a_player_position)
     a_player_position += dice_roll
 end
 
-#players position + dice roll
-p1_position = player_roll(p1_position)
-
 #this method will recreate the array to update the char location
 def move_player_char(player_position, player_char)
     player = Array.new(16, "  ") 
@@ -33,9 +30,25 @@ def move_player_char(player_position, player_char)
     return player
 end
 
+
+
+#START GAME LOOP HERE
+
+#players position + dice roll
+p1_position = player_roll(p1_position)
+p2_position = player_roll(p2_position)
+
+#END GAME LOOP
+
+
+
+#VISUAL OUTPUT
+
+#players char position
 p1 = move_player_char(p1_position, "🧛")
 p2 = move_player_char(p2_position, "🧚")
 
+#BEGINNING OF GAME BOARD
 game = <<-HERDOC
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$ #{p1[8]}     #{9}|#{p1[9]}     #{10}|#{p1[10]}     #{11}|#{p1[11]}     #{12}|#{p1[12]}     #{13}|#{p1[13]}     #{14}|#{p1[14]}     #{15}|#{p1[15]}     #{16}|$$
@@ -50,6 +63,7 @@ $$ #{p4}      |#{p4}     #{b}|#{p4}     #{l}|#{p4}     #{b}|#{p4}     #{b}|#{p4}
 $$_________|_________|_________|_________|_________|_________|_________|_________|$$
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 HERDOC
+# END OF GAME BOARD
 
 puts 
 puts "            MAGIC Snakes and ladders... and the drunk wizard! 16 step edition"
