@@ -34,9 +34,7 @@ end
 
 
 p1_position = player_roll(p1_position)
-# p2_position = player_roll(p2_position)
-# p3_position = player_roll(p3_position)
-# p4_position = player_roll(p4_position)
+
 
 def move_player(player_position, player_char)
     player = Array.new(16, "  ") 
