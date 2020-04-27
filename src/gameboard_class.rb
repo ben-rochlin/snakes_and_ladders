@@ -57,7 +57,11 @@ player_2 = 0
 #player dice/roll
 def player_roll(player_name, player_position)
     dice_roll = rand(1..3)
-    puts "         -- #{player_name} rolled a #{dice_roll}"
+    puts "         -- #{player_name} rolled a #{dice_roll} \n \n"
+    sleep 2
+    puts "      press enter to move your character forwards"
+    sleep 1
+    gets
     player_position += dice_roll
     return player_position
 end
@@ -87,12 +91,16 @@ Gameboard.new(player_1,player_2)
 
 player1_movement_meth(player1_movement, player_2)
 
+    Gameboard.new(player_1,player_2)
+
+  
 
     
     
     
     #obstacles will live here snakes laddders etc
     Gameboard.new(player_1,player_2)
+    puts "\n \n"
 
 
 
