@@ -89,8 +89,13 @@ end
 
 player_1 = 0
 
+
 while player_1 < 15 
+#game loop
+
+        
         loop do 
+        #drunk wizard loop    
 
 
             #player_1 turn
