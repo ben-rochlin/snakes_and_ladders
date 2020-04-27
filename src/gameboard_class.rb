@@ -56,10 +56,11 @@ player_2 = 0
 
 #player dice/roll
 def player_roll(player_name, player_position)
-    dice_roll = rand(1..3)
-    puts "         -- #{player_name} rolled a #{dice_roll} \n \n"
+    # dice_roll = rand(1..3)
+    dice_roll = 2
+    puts "         -- #{player_name} rolled a #{dice_roll} \n \n \n"
     sleep 2
-    puts "      press enter to move your character forwards"
+    puts "                      *press enter to move your character forwards*"
     sleep 1
     gets
     player_position += dice_roll
@@ -89,18 +90,51 @@ Gameboard.new(player_1,player_2)
     play1_pos_after_roll = player_1
     player1_movement = play1_pos_before_roll .. play1_pos_after_roll
 
+#char movement
 player1_movement_meth(player1_movement, player_2)
 
+#char landing
     Gameboard.new(player_1,player_2)
+
+#obstacles 
+if player_1 = 12 
+    
+    puts "\n     You have landed on a pesky snake, 🐍\n \n"
+    sleep 1.5
+    puts "     you have to slip back down sorry :(     \n\n"
+    player_1 = 1
+    sleep 3
+    puts "\n \n                          press enter to continue"
+    gets
+
+elsif player_1 = 3
+    "\n     You have landed on a ladder, 🧬\n \n"
+    sleep 1.5
+    puts "     you get to climb the ladder! :)     \n\n"
+    play1_pos_before_ladder = player_1
+    play1_pos_after_ladder = 6
+    player1_movement = play1_pos_before_ladder .. play1_pos_after_ladder
+    player1_movement_meth(player1_movement, player_2)
+    sleep 3
+    puts "\n \n                          press enter to continue"
+    gets
+    puts
+
+elsif player_1 = 7
+    puts "\n     You have landed on a Wild Wizard, 🧙\n \n"
+
+
+end
+
+    #obstacles will live here snakes laddders etc
+    Gameboard.new(player_1,player_2)
+    puts "\n \n"
 
   
 
     
     
     
-    #obstacles will live here snakes laddders etc
-    Gameboard.new(player_1,player_2)
-    puts "\n \n"
 
 
 
