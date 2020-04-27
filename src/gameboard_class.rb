@@ -107,6 +107,7 @@ player1_movement_meth_forwards(player1_movement, player_2)
 
 #obstacles 
 
+
 if player_1 == 2
     puts "\n     You have landed on a ladder, 🧬\n \n"
     sleep 2
@@ -145,7 +146,7 @@ elsif player_1 == 11
 elsif player_1 == 6
     puts "\n     You have landed on a Wild Wizard, 🧙\n \n"
     sleep 2.5
-    wiz = 3
+    wiz = 1
     # wiz_spell_length = rand (1..5)
     if wiz == 1
         puts "     you have encounted a happy wizard \n \n"
@@ -155,10 +156,11 @@ elsif player_1 == 6
         puts "\n \n                                press enter to continue"
         gets
         play1_pos_before_wiz = player_1
-        play1_pos_after_wiz = 10
+        play1_pos_after_wiz = player_1 + rand(4..5)
+        player1_after_wiz = play1_pos_after_wiz
         player1_movement = play1_pos_before_wiz .. play1_pos_after_wiz
         player1_movement_meth_forwards(player1_movement, player_2)
-        player_1 = 10
+        player_1 = player1_after_wiz
 
     elsif wiz == 2
         puts "     you have encounted an angry wizard :( \n \n"
